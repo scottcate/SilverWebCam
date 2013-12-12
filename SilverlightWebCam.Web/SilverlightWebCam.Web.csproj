@@ -60,8 +60,7 @@
   <ItemGroup>
     <Content Include="ClientBin\SilverlightWebCam.xap" />
     <Content Include="Silverlight.js" />
-    <Content Include="SilverlightWebCamTestPage.aspx" />
-    <Content Include="SilverlightWebCamTestPage.html" />
+    <Content Include="cam.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

@@ -11,6 +11,17 @@ namespace SilverlightWebCam
         public MainPage()
         {
             InitializeComponent();
+            if (Application.Current.IsRunningOutOfBrowser)
+            {
+                //show resize and move anchors
+                ResizeAnchor.Visibility = MoveAnchor.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                //show resize and move anchors
+                ResizeAnchor.Visibility = MoveAnchor.Visibility = Visibility.Collapsed;
+            }
+
         }
 
         private void startVideo_Click(object sender, RoutedEventArgs e)
@@ -46,10 +57,12 @@ namespace SilverlightWebCam
         private void StopVideo(object sender, MouseButtonEventArgs e)
         {
             _cs.Stop();
-            StartVideo.Visibility =
-                ResizeAnchor.Visibility =
-                MoveAnchor.Visibility =
-                Visibility.Visible;
+            StartVideo.Visibility = Visibility.Visible;
+
+            if (Application.Current.IsRunningOutOfBrowser)
+            {
+                ResizeAnchor.Visibility = MoveAnchor.Visibility = Visibility.Visible;
+            }
         }
 
         private void DragWindow(object sender, MouseButtonEventArgs e)

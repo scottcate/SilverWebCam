@@ -6,14 +6,27 @@
 
         <Rectangle x:Name="Video" MouseLeftButtonUp="StopVideo"/>
         <Button x:Name="StartVideo" Click="startVideo_Click">
-            <TextBlock>
-                Click to Start (and stop) your Web Camera! (Right Click to Select Camera Properties)
+            <TextBlock TextWrapping="Wrap" MaxWidth="400">
+                <Span FontWeight="Bold" FontSize="30">SilverCam How To ...</Span>
                 <LineBreak/>
-                <LineBreak/>Right Click to Select Camera, and to Install "Out of Browser"
+                <LineBreak/><Span FontWeight="Bold">Start and Stop your Web Camera</Span>
+                <LineBreak/>Left Click to toggle the Camera on or off
                 <LineBreak/>
-                <LineBreak/>Once "Out of Browser is running ...
-                <LineBreak />Yellow: Resize
-                <LineBreak />Red: Move
+                <LineBreak/><Span FontWeight="Bold">Select a Different Web Cam</Span>
+                <LineBreak/><Span>Right Click, Open Silverlight Properties, and in the popup, head over to the Webcam / Mic tab. Here you can select the active Webcam.</Span>
+                <LineBreak/>
+                <LineBreak/><Span FontWeight="Bold">Go Chromless (no window border)</Span>
+                <LineBreak/>Right Click to Select Camera, and to Install "Out of Browser". To open SilverCam in the future, just search your computer for SilverCam, it'll be o the menu.
+                <LineBreak/>
+                <LineBreak/><Span FontWeight="Bold">Resize your Chromeless (no border) Window</Span>
+                <LineBreak />Click and Drag the Yellow Triangle
+                <LineBreak/>
+                <LineBreak/><Span FontWeight="Bold">Move your Chromeless (no border) Window</Span>
+                <LineBreak />Click and Drag the Red Square to Move the Windows
+                <LineBreak/>
+                <LineBreak/><Span FontWeight="Bold">Close/Exit your Chromeless (no border) Window</Span>
+                <LineBreak />Windows: ALT+F4
+                <LineBreak />Mac: Command+Q
             </TextBlock>
         </Button>
 
